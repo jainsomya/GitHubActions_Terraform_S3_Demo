@@ -25,7 +25,10 @@ jobs:
 
         - name: Set up Terraform
           uses: hashicorp/setup-terraform@v1
-        
+            
+        - name: Initialize Terraform
+          run: terraform init -reconfigure
+          
         - name: 'Terraform plan'                                   
           id: plan                                   
           run: |
