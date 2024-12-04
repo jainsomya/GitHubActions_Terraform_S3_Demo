@@ -2,9 +2,7 @@ resource "aws_s3_bucket" "bucket1" {
 	bucket = "somya-first-bucket"
 }
 
-resource "aws_s3_bucket" "bucket2" {
-	bucket = "somya-second-bucket"
-    
+resource "aws_s3_bucket" "bucket2" {    
 }
 
 provider "aws" {
